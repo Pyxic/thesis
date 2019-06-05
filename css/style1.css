@@ -1,0 +1,719 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+.shadow{
+    box-shadow: 1px 12px 10px 2px rgba(7, 7, 7, 0.2);
+}
+.photoEmployee{
+    width: 40px;
+    height: 40px;
+    border: solid 1px black;
+    border-radius: 50%;
+}
+.nav-mr{
+    margin-right:10px; 
+}
+.hProjects{
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.bg-color{
+    /* background: rgb(216, 216, 216); */
+    /* background: linear-gradient(to bottom,rgba(120, 107, 175, 1), rgba(40, 140, 255,1)); */
+    /* background-color: rgb(206, 206, 206); */
+    /* background: linear-gradient(180deg, rgba(110,131,151,1) 0%, rgba(190,215,227,1) 37%, rgba(136,173,180,1) 88%);  */
+    background: rgb(110,131,151);
+background: linear-gradient(180deg, rgba(110,131,151,1) 0%, rgba(160,208,231,1) 50%, rgba(136,173,180,1) 100%); 
+/* background: rgb(172,178,184);
+background: linear-gradient(180deg, rgba(172,178,184,1) 0%, rgba(195,218,228,1) 50%, rgba(181,181,181,1) 100%); */
+    /* background-color: transparent; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-size: cover; */
+}
+.deleteMember{
+    color:#00aeef;
+}
+.deleteMember:hover{
+    color:red;
+}
+.bg-color-light{
+    background: rgb(212, 212, 212);
+}
+.noProject{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    font: 20px Arial;
+    color: rgb(68, 68, 68);
+}
+.noDocument{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font: 20px Arial;
+    color: rgb(68, 68, 68);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.department{
+    position: relative;
+}
+.messages{
+    margin-top: 10px;
+    background: #ffffff;
+    padding: 15px 15px;
+}
+.create{
+    margin-top: 50px;
+    background: #ffffff;
+    padding: 15px 15px;
+}
+.nameProject{
+    color: rgb(116, 116, 116);
+}
+.row > div{
+    margin-top: 13px;
+    background: #ffffff;
+}
+.row > .gantt{
+    margin-top: 5px;
+    background: #ffffff;
+    margin-left: -12px;
+}
+.reprotButton{
+    margin-top:20px;
+}
+.btn-quest{
+    max-width: 8em; /* блок занимает ширину родителя, max-width её ограничивает */
+    min-height: 2em;
+    margin-left: auto;
+    margin-bottom: 5px;
+}
+.attach{
+    background: none;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+}
+.attach:hover, .attach:focus {
+    color: hsla(108, 12%, 0%, 1);
+    box-shadow: -1px 1px 2px hsla(108, 62%, 42%, 1);
+    background-color: hsla(108, 62%, 92%, 1)
+}
+.attach:active {
+    color: hsla(108, 42%, 32%, 1);
+    box-shadow: -2px 4px 8px hsla(64, 64%, 42%, 1);
+    background-color: hsla(64, 64%, 92%, 1);
+}
+.buttonCreateProject{
+    display: flex;
+    justify-content: flex-start;
+    padding-right:10px;
+    margin-bottom: 20px; 
+    margin-top: 100px;
+    position: relative;
+}
+.statusPart{
+    position: absolute;
+    left: -14px;
+    top: 1px;
+    font-size: 11px;
+    color: #999;
+    text-overflow: ellipsis;
+}
+/* .buttonCreateProject::before{
+    content: '';
+    border-top: 1px solid rgba(235, 235, 235, 0.8);
+    box-shadow: 0 -1px rgba(0,0,0,0.2);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    right: 0;
+} */
+/* .buttonCreateProject2::before{
+    content: '';
+    border-top: 1px solid rgba(235, 235, 235, 0.8);
+    box-shadow: 0 -1px rgba(0,0,0,0.2);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 22px;
+    right: 0;
+} */
+.buttonStyle{
+    position: relative;
+    display: inline;
+}
+.invite{
+    padding: 0 10px;
+}
+.buttonCreateTask{
+    display: flex;
+    justify-content:  left;
+}
+.myTasks,.tasks, .lifeCicle, .addPartners, .reqisites, .analiz, .save{
+    background: #ffffff;
+    margin-top:10px;
+    padding: 15px 15px;
+}
+.menu1{
+    background-color: #fff;
+}
+.myTasks{
+    max-height: 400px;
+}
+.lifeCicleTable{
+    font-size: 12px;
+    font-weight: 500;
+}
+.triangle{
+    width: 0;
+	height: 0;
+	border-top: 22px solid transparent;
+	border-left: 30px solid rgb(206, 206, 206);
+	border-bottom: 22px solid transparent;
+}
+.lifeCicleTable tr td{
+    border: solid 1px rgb(206, 206, 206);
+    background: rgb(206, 206, 206);
+}
+.lifeCicleTable tr td:first-child{
+    background: rgb(18, 53, 209);
+    border-color: black;
+    color: white;
+}
+.lifeCicleTable tr td:last-child{
+    border-right-color: rgb(206, 206, 206);
+}
+.nextStage{
+    text-decoration: none;
+    color: rgb(223, 63, 0);
+}
+.lifeCicleFigure{
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.fa-angle-right{
+    font-size: 50px;
+    color: rgb(206, 206, 206);
+}
+.task{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+.document{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+.doc{
+    margin: 0 19px 15px 0;
+    padding: 7px 3px 20px 3px;
+    min-width: 420px;
+    max-width: 420px;
+    position: relative;
+}
+.doc .fileAccess{
+    display: inline;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    color:#00aeef;
+}
+.doc .fileAccess:hover{
+    color: red;
+}
+.doc a{
+    color:#999;
+    text-decoration: none;
+    pointer-events: none;
+    cursor: default;
+}
+.doc .task{
+    color: #00aeef;
+    display: inline-block;
+    margin:0;
+    padding: 0;
+}
+.doc .deleteFile{
+    position: absolute;
+    color:black;
+    top:5px;
+    left: 90%;
+    display: none;
+}
+.doc:hover .deleteFile{
+    display: inline-block;
+}
+.ext{
+    float: left;
+    width: 47px;
+    height: 51px;
+    padding: 47px 0 0 0;
+    margin: 0 15px 0 5px;
+    position: relative;
+    text-align: center;
+}
+.doc .chooseAccess{
+    display: none;
+    border-radius: 4px;
+    padding: 2px 3px;
+    position: absolute;
+    top: 0px;
+    left: -26px;
+    background: white;
+    box-shadow: 1px 1px 1px 1px rgb(31, 31, 31);
+}
+.doc .chooseAccess span{
+    color: #00aeef;
+    margin: 2px 10px 5px 10px;
+    padding: 0px 0px;
+    display: block;
+}
+.doc .chooseAccess .all:hover{
+    color:red;
+}
+.doc .chooseAccess .head:hover{
+    color:red;
+}
+.ext u{
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    left: 0;
+    top: 0;
+    opacity: 0.75;
+    border-radius: 2px 10px 0 0;
+    opacity: 0.25;
+    background: #999;
+}
+.doc:hover .ext u{
+    background: #00aeef;
+    opacity: 1;
+}
+.ext i {
+    font: 10px/18px Arial;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    padding: 0 2px;
+    border-radius: 0 0 4px 4px;
+    height: 18px;
+    background: #00aeef;
+    color: white;
+}
+.doc .ico_dload_new i{
+    color: #07D;
+}
+.doc b{
+    font: bold 13px Arial;
+    display: block;
+    white-space: nowrap;
+    padding: 8px 0 2px 0;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.accessStyle{
+    font: bold 13px Arial;
+    white-space: nowrap;
+    padding: 0px 0 0px 0;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.doc em{
+    font: bold 13px Arial;
+    display: block;
+    white-space: nowrap;
+    padding: 8px 0px 2px 0px;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+span span.ico_dload_new {
+    display: none;
+}
+.doc:hover{
+    border-radius: 4px;
+    box-shadow: 3px 2px 7px 5px rgb(31, 31, 31);
+}
+.doc:hover span span.ico_dload_new{
+    display: inline-block;
+}
+span.ico{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin: -3px 2px -1px;
+}
+.delete{
+    color:rgb(185, 0, 0);
+    font-weight: 500;
+}
+.delete:hover{
+    color:rgb(255, 0, 0);
+}
+.participants{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top:20px;
+    margin-left: 20px;
+}
+.centered{
+    text-align:center;
+}
+.participant{
+    background: white;
+    padding: 20px 0px 0px 0px;
+    margin: 5px;
+    border-radius: 5%;
+    font-size: 20px;
+    min-width: 250px;
+}
+.fullNameParticipant{
+    font-weight: 700;
+    font-size: 18px;
+    padding-left:20px;
+    padding-top: 10px;
+}
+.circle2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    background: rgb(224, 82, 0);
+    float: right;
+    margin-right: 12px;
+}
+.email{
+    font-size: 14px;
+    margin-top: 25px;
+    color:rgb(0, 113, 206);
+    padding-left:22px;
+}
+.phone{
+    font-size: 14px;
+    padding-left:22px;
+    padding-bottom: 5px;
+    margin-bottom:16px;
+}
+.contacts{
+    color:#777;
+}
+.link{
+    background-color: #f4f4f4;
+    width: 280px;
+    padding-left:10px;
+}
+.countProjects{
+    padding-right: 10px;
+}
+
+.task >span{
+    margin-right:30px;
+}
+.countDay{
+    background:rgb(136, 136, 136);
+    color: white;
+    border-radius: 20%;
+    padding-left: 2px;
+    padding-right: 2px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 20px;
+    justify-content: center;
+}
+.ratingTask{
+    background: rgb(196, 0, 0);
+    color: white;
+    border-radius: 10%;
+    padding-left: 2px;
+    padding-right: 2px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 20px;
+    justify-content: center;
+}
+.photoTask{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    float: right;
+    text-align: right;
+}
+.employeeTask{
+    margin-left:auto;
+}
+.flex-column{
+    text-align: center;
+}
+.sidebar-sticky{
+    background: #ffffff;
+    height : 100%;
+}
+.analiz{
+    margin-top: 10px;
+}
+.eventRibbon{
+    background: #ffffff;
+    padding: 15px 15px;
+    margin-top: 10px;
+    height: 100%;
+    width: 455px;
+}
+.three{
+    background: #ffffff;
+    padding: 20px;
+    margin-top:60px; 
+}
+.width{
+    width: 100%;
+}
+.nav .width .flex a, .nav .width .location a{
+   display: flex;
+   justify-content: space-between;
+}
+span{
+    width: auto;
+}
+.nameEmployee{
+    line-height: 100%;
+}
+#createProject{
+    margin: 10px;
+}
+
+.button {
+	border-radius: 3px;
+	background-color: #ff5252;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+	font-size: 12px;
+	text-transform: uppercase;
+} 
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .8);
+    display: none;
+    overflow: hidden;
+}
+.departmentSelect,.inputDepart{
+    display: none;
+    width: 200px;
+}
+.poz{
+    position: relative;
+}
+.overlay2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .8);
+    display: none;
+}
+.stop-scrolling {
+    overflow: hidden;
+  }
+.popup {
+	position: absolute;
+	width: 80%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	box-sizing: border-box;
+	background-color: #ffffff;
+}
+
+.close-popup {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+
+.close-popup:before {
+	content: '';
+	background-color: #000;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	left: -4px;
+	transform: rotate(-45deg);
+}
+
+.close-popup:after {
+	content: '';
+	background-color: #000;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	transform: rotate(45deg);
+	left: -4px;
+}
+
+@media screen and (max-width: 768px) {
+
+	.popup {
+		width: 100%;
+		height: 100vh;
+		font-size: 15px;
+	}
+}
+
+#tooltip {
+    z-index: 9999;
+    position: absolute;
+    display: none;
+    top:0px;
+    left:0px;
+    width: 250px;
+    background-color: #fff;
+    padding: 5px 10px 5px 10px;
+    color: #000;
+    border: 1px solid #888;
+    border-radius: 5px; 
+    box-shadow: 0 1px 2px #555;
+    box-sizing: ;
+  }
+.flex ul li:hover{
+    background: rgb(51, 99, 148);
+}
+.part:hover{
+    background: rgb(51, 99, 148);
+}
+.part:hover span{
+    color:white;
+}
+.flex ul li:hover span{
+    color: white;
+}
+.datepicker{
+    width: 256px;
+}
+
+
+.projects{
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-left: 130px;
+}
+.project{
+    background: white;
+    padding: 10px 30px 20px 10px;
+}
+.project{
+    background: white;
+    padding: 10px 30px 20px 10px;
+    margin: 5px;
+    border-radius:5%;
+    min-width: 320px;
+    position: relative;
+}
+.statusProject{
+    position: absolute;
+    top: 8px;
+    left: 75%;
+    font: bold 13px Arial;
+    white-space: nowrap;
+    padding: 8px 0px 2px 0px;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+}
+.active{
+    color: #07D;
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    background: rgb(224, 82, 0);
+  }
+  .circleHead {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 8px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    background: rgb(224, 82, 0);
+  }
+  .nameHead{
+      text-align: center;
+      line-height: 50px;
+      width: 50px;
+      height: 50px;
+      position: relative;
+  }
+
+  .linkOff{
+      text-decoration: none;
+      color: #000;
+  }
+  .linkOff:hover{
+    text-decoration: none;
+    color: #000;
+  }
+  #overnone{
+      overflow: none;
+  }
+  .btnAddUserDepart{
+    background: none;
+    border: none;
+    color: moccasin;
+  }
+  .btnAddUserDepart:hover{
+      color: white;
+  }
+  .table_dark {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    width: 640px;
+    text-align: left;
+    border-collapse: collapse;
+    background: rgb(255, 255, 255);
+    margin: 10px;
+  }
+  .tables{
+      display: flex;
+      justify-content: center;
+  }
